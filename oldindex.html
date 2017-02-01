@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="scripts/pushbullet.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="scripts/main.css"> 
+		<script>
+		PushBullet.APIKey = "o.r6MVZUniNq1K3QjzZbRTIqynIrzIXAt4";
+
+		var res = PushBullet.sendSMS();
+		console.log(res);
+		</script>
+	</head>
+
+	<body>
+		<div id = "messagelist">
+			<table>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+			</table>
+		</div>
+
+		<div id = "selectedmessage">
+		</div>
+	</body>
+</html>

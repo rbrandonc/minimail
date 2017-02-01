@@ -1,0 +1,40 @@
+<html>
+<head>
+  <script type="text/javascript" src="./views/js/jquery.min.js" onload="$ = jQuery = module.exports;"></script>
+  <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+  <script src="/views/js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="/views/stylesheets/main.css"> 
+  <link rel="stylesheet" href="/views/stylesheets/tinyscrollbar.css" type="text/css" media="screen"/>
+  <script src="/views/js/jquery.tinyscrollbar.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      checkAuth();
+      $('#scrollbar1').tinyscrollbar();
+    });
+  </script>
+
+</head>
+<body>
+  <div id="authorize-div" style="display: none">
+    <span>Authorize access to Gmail API</span>
+    <!--Button for the user to click to initiate auth sequence -->
+    <button id="authorize-button" onclick="handleAuthClick(event)">
+      Authorize
+    </button>
+  </div>
+
+  <div id="scrollbar1">
+    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+    <div class="viewport">
+      <div class="overview">
+        <table id = "messagelist">
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <iframe id = "selectedmessage">
+  </iframe>
+</body>
+</html>

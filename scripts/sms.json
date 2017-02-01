@@ -1,0 +1,11 @@
+{
+    "type": "push",
+    "push": {
+        "type": "messaging_extension_reply",
+        "package_name": "com.pushbullet.android",
+        "source_user_iden": "ujC5qmMtLFI",
+        "target_device_iden": "ujC5qmMtLFIsjAiVsKnSTs",
+        "conversation_iden": "+1 336 290 3328",
+        "message": "test"
+    }
+}
